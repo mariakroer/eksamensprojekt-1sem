@@ -10,13 +10,7 @@
     --gul: #F9E004; 
 }
 
-/*logo styling*/
-#logostyle {
-    width: 15%;
-    height: auto;
-}
-
-
+/*style af hele siden*/
 * {
     margin: 0;
     padding: 0;
@@ -26,74 +20,39 @@
     vertical-align: baseline;
     background: transparent;
   }
- 
- /*styling af header*/
+
+/*Header style*/
+
+ /*styling af hele header*/
  .header {
-    background: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between; /* Justeret til at placere logo og overskrifter i hver sin ende */
-    align-items: center; /* Centrerer elementerne lodret */
-    padding: 0 8px;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 0.5rem;
     top: 0;
     left: 0;
     width: 100%;
-    position: fixed; /* Fastgør menu-containeren øverst på siden */
+    position: fixed; /* Fastgør navbaren øverst på siden */
     z-index: 99;
+    text-wrap: nowrap; 
  }
- 
- /*styling af navbar til desktop størrelsen*/
- .navbar {
-    list-style-type: none;
-    display: flex;
+
+   /*logo styling*/
+ #logostyle {
+    width: 15%;
+    height: auto;
+    margin-left: 2rem; 
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
  }
- 
- .navbar li {
-    margin-right: 60px;
- }
- 
- .navbar a {
-    text-decoration: none;
-    color: var(--sort);
-    font-family: Radio Canada,sans-serif;
-    font-weight: 350;
-    font-size: 20px;
-    font-style: normal;
- }
- 
- /*styling af dropdown til dektop størrelsen*/
- .dropdown {
-    position: relative;
- }
- 
- .dropdown-content {
-    display: none; /* Skjuler dropdown-indholdet som standard */
-    position: absolute;
-    background-color: var(--hvid);
-    color: var(--sort);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    line-height: 1.5;
- }
- 
- .dropdown-content a{
-    font-family: "Radio Canada",sans-serif;
-    font-weight: 100;
-    font-style:normal;
-    font-size: 20px;
- }
- 
- #dropdown-left{
-    right: 10px; /* Justerer positionen til højre */
- }
- 
+
  /*styling af burgermenu*/
  .dropdown-burgermenu {
     display: none; /* Skjuler dropdown-indholdet som standard */
     position:fixed;
-    background-color: var(--hvid);
-    font-family: "Radio Canada", sans-serif;
+    font-family: "Reem Kufi", Arial, Helvetica, sans-serif;
     font-weight: 100;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
@@ -108,25 +67,20 @@
     font-style: normal;
     font-size: 20px;
  }
+
+ .burger-icon {
+    display: block;
+    cursor: pointer;
+    margin-right: 40px;
+    font-size: 36px;
+ }
  
- /*Tilføjer hover effekt når man trykker på den valgte overskrift*/
  .hover-effekt:hover {
-    background-color:var(--grå); 
+    text-decoration: underline; /*Understreger når man hover over den valgte overskrift*/
  }
  
- /* Viser/skjuler dropdown-menuen, når man trykker på burger iconen*/
  .toggle-checkbox:checked + .burger-icon + .dropdown-burgermenu {
-    display: block;
- }
- 
- /* Viser dropdown-indholdet, når musen holdes over menuelementet */
- .navbar li:hover .dropdown-content {
-    display: block; 
- }
- 
- /* Viser sub-dropdown menu, når musen holdes over*/
- .submenu:hover .sub-dropdown-content {
-    display: block;
+    display: block; /*Viser/skjuler dropdown-menuen, når man trykker på burger ikonet*/
  }
  
  /*Styling af sub-dropdown-content*/
@@ -135,19 +89,21 @@
     position: absolute;
     top: 100%;
     right: 100%;
-    background-color: var(--hvid);
     color: var(--sort);
-    font-family: Radio Canada, sans-serif;
+    font-family: "Reem Kufi", Arial, Helvetica, sans-serif;
     font-weight: 100;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
  }
+
+ .submenu:hover .sub-dropdown-content {
+    display: block; /*Viser sub-dropdownmenuen, når musen hover over*/
+ }
  
  .submenu{
     position:relative;
  }
- 
  
  #sub-dropdown-content1{
     position:fixed;
@@ -160,41 +116,71 @@
  
  }
  
- .logo {
-    margin-left: 30px; /* Justeret marginen til venstre for logoet */
-    margin-right: 30px; /* Juster marginen til højre for logoet */
-    margin-top: 20px; /* Juster marginen for toppen af logoet i navbar*/
-    margin-bottom: 20px; /* Juster marginen under logoet i navbar*/
- }
- 
  /* Skjuler checkbox */
  #toggle {
     display: none;
  }
  
- @media screen and (max-width: 992px) {
-    .navbar {
-        display: none;
-    }
+ /*skjuler navigationsbaren*/
+ .navbar {
+   display: none;
+ }
  
- /* Viser burger-ikon */
-    #toggle:checked + .navbar {
-        display: block;
-    }
+ @media screen and (min-width: 992px) {
+
+ /*styling af navbar til desktop størrelsen*/
+
+ .navbar {
+   list-style-type: none;
+   display: flex; /*Navigationsbaren vises*/
+ }
+
+ .navbar li:hover .dropdown-content { 
+   display: block; /*Viser dropdown-indholdet, når musen hover over menupunkterne*/
+ }
+
+ .navbar li {
+   margin-right: 3.5rem;
+ }
+
+ .navbar a {
+   text-decoration: none;
+   color: var(--sort);
+   font-family: "Reem Kufi", Arial, Helvetica, sans-serif;
+   font-weight: 350;
+   font-size: 1rem;
+   font-style: normal;
+ }
+
+ /*styling af dropdown til desktop*/
+ .dropdown {
+   position: relative;
+ }
+
+ .dropdown-content {
+   display: none; /* Skjuler dropdown-indholdet som standard */
+   position: absolute;
+   color: var(--sort);
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   padding: 12px 16px;
+   z-index: 1;
+   line-height: 1.5;
+ }
+
+ .dropdown-content a{
+   font-family: "Reem Kufi", Arial, Helvetica, sans-serif;
+   font-weight: 100;
+   font-style:normal;
+   font-size: 1rem;
+ }
+
+ #dropdown-left{
+   right: 0.7rem; /* Justerer positionen til højre */
  }
  
  /* Styling af burger-ikon */
  .burger-icon {
     display: none;
-    cursor: pointer;
-    margin-right: 40px;
-    font-size: 36px;
  }
- 
- 
- /* Tilpasninger til mindre skærme */
- @media screen and (max-width: 992px) {
-    .burger-icon {
-        display: block;
-    }
+
  }
