@@ -59,6 +59,7 @@
  .dropdown-burgermenu {
     display: none; /* Skjuler dropdown-indholdet som standard */
     position:fixed;
+    background-color: var(--hvid);
     font-weight: 100;
     box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
     padding: 0.7rem 1rem;
@@ -210,5 +211,14 @@
 
  #øverstebillede {
    width: 100%;
+   height: auto;
+   position: absolute;
+   z-index: 1;
+ }
+
+ #øverstetekst {
+   position: absolute;
+   z-index: 2;
+   width: 40%;
    height: auto;
  }
