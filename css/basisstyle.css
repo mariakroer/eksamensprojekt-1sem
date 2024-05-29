@@ -28,6 +28,7 @@
  .header {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     display: flex;
+    background-color: var(--hvid);
     justify-content: space-between; 
     align-items: center; 
     padding: 0 0.5rem;
@@ -40,13 +41,18 @@
  }
 
    /*logo styling*/
- #logostyle {
+ .logostyle {
     width: 15%;
     height: auto;
     margin-left: 2rem; 
     margin-right: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+ }
+
+/*det store logo skjules*/
+ #logostor {
+   display: none;
  }
 
  /*styling af burgermenu*/
@@ -63,6 +69,7 @@
  
  .dropdown-burgermenu a{
     text-decoration: none;
+    background-color: var(--hvid);
     color: var(--sort);
     font-style: normal;
     font-size: 1rem;
@@ -90,6 +97,7 @@
     top: 100%;
     right: 100%;
     color: var(--sort);
+    background-color: var(--hvid);
     font-weight: 100;
     box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
     padding: 0.7rem 1rem;
@@ -127,6 +135,16 @@
  
  @media screen and (min-width: 992px) {
 
+ /*det store logo vises*/
+ #logostor {
+   display: block;
+ }
+
+ /*Det lille logo skjules*/
+ #logolille {
+   display: none;
+ }
+ 
  /*skjuler burgerikonet fra desktop*/
  .burger-icon {
    display: none;
@@ -136,6 +154,7 @@
  .navbar {
    list-style-type: none;
    display: flex; /*Navigationsbaren vises*/
+   background-color: var(--hvid);
  }
 
  .navbar li:hover .dropdown-content { 
@@ -148,6 +167,7 @@
 
  .navbar a {
    text-decoration: none;
+   background-color: var(--hvid);
    color: var(--sort);
    font-weight: 350;
    font-size: 1rem;
@@ -162,6 +182,7 @@
  .dropdown-content {
    display: none; /* Skjuler dropdown-indholdet som standard */
    position: absolute;
+   background-color: var(--hvid);
    color: var(--sort);
    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
    padding: 0.7rem 1rem;
@@ -179,4 +200,15 @@
    right: 0.7rem; /*Justerer positionen til højre*/
  }
 
+ }
+
+ /*Main style*/
+ main {
+   padding-top: 17%;
+   padding-bottom: 20%;
+ }
+
+ #øverstebillede {
+   width: 100%;
+   height: auto;
  }
