@@ -1,0 +1,200 @@
+
+/*farver som variabler*/
+:root {
+    --sort: black;
+    --hvid: white;
+    --blå: #0066FF;
+    --pink: #E904A8; 
+    --orange: #E96E15; 
+    --grøn: #07AE22; 
+    --gul: #F9E004; 
+}
+
+/*logo styling*/
+#logostyle {
+    width: 15%;
+    height: auto;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+ 
+ /*styling af header*/
+ .header {
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Justeret til at placere logo og overskrifter i hver sin ende */
+    align-items: center; /* Centrerer elementerne lodret */
+    padding: 0 8px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed; /* Fastgør menu-containeren øverst på siden */
+    z-index: 99;
+ }
+ 
+ /*styling af navbar til desktop størrelsen*/
+ .navbar {
+    list-style-type: none;
+    display: flex;
+ }
+ 
+ .navbar li {
+    margin-right: 60px;
+ }
+ 
+ .navbar a {
+    text-decoration: none;
+    color: var(--sort);
+    font-family: Radio Canada,sans-serif;
+    font-weight: 350;
+    font-size: 20px;
+    font-style: normal;
+ }
+ 
+ /*styling af dropdown til dektop størrelsen*/
+ .dropdown {
+    position: relative;
+ }
+ 
+ .dropdown-content {
+    display: none; /* Skjuler dropdown-indholdet som standard */
+    position: absolute;
+    background-color: var(--hvid);
+    color: var(--sort);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    line-height: 1.5;
+ }
+ 
+ .dropdown-content a{
+    font-family: "Radio Canada",sans-serif;
+    font-weight: 100;
+    font-style:normal;
+    font-size: 20px;
+ }
+ 
+ #dropdown-left{
+    right: 10px; /* Justerer positionen til højre */
+ }
+ 
+ /*styling af burgermenu*/
+ .dropdown-burgermenu {
+    display: none; /* Skjuler dropdown-indholdet som standard */
+    position:fixed;
+    background-color: var(--hvid);
+    font-family: "Radio Canada", sans-serif;
+    font-weight: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    right: 15px;
+    line-height: 1.5;
+    z-index: 1;
+ }
+ 
+ .dropdown-burgermenu a{
+    text-decoration: none;
+    color: var(--sort);
+    font-style: normal;
+    font-size: 20px;
+ }
+ 
+ /*Tilføjer hover effekt når man trykker på den valgte overskrift*/
+ .hover-effekt:hover {
+    background-color:var(--grå); 
+ }
+ 
+ /* Viser/skjuler dropdown-menuen, når man trykker på burger iconen*/
+ .toggle-checkbox:checked + .burger-icon + .dropdown-burgermenu {
+    display: block;
+ }
+ 
+ /* Viser dropdown-indholdet, når musen holdes over menuelementet */
+ .navbar li:hover .dropdown-content {
+    display: block; 
+ }
+ 
+ /* Viser sub-dropdown menu, når musen holdes over*/
+ .submenu:hover .sub-dropdown-content {
+    display: block;
+ }
+ 
+ /*Styling af sub-dropdown-content*/
+ .sub-dropdown-content {
+    display:none;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    background-color: var(--hvid);
+    color: var(--sort);
+    font-family: Radio Canada, sans-serif;
+    font-weight: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+ }
+ 
+ .submenu{
+    position:relative;
+ }
+ 
+ 
+ #sub-dropdown-content1{
+    position:fixed;
+    display: none;
+ }
+ 
+ #sub-dropdown-content2{
+    top:100px;
+    position: fixed;
+ 
+ }
+ 
+ .logo {
+    margin-left: 30px; /* Justeret marginen til venstre for logoet */
+    margin-right: 30px; /* Juster marginen til højre for logoet */
+    margin-top: 20px; /* Juster marginen for toppen af logoet i navbar*/
+    margin-bottom: 20px; /* Juster marginen under logoet i navbar*/
+ }
+ 
+ /* Skjuler checkbox */
+ #toggle {
+    display: none;
+ }
+ 
+ @media screen and (max-width: 992px) {
+    .navbar {
+        display: none;
+    }
+ 
+ /* Viser burger-ikon */
+    #toggle:checked + .navbar {
+        display: block;
+    }
+ }
+ 
+ /* Styling af burger-ikon */
+ .burger-icon {
+    display: none;
+    cursor: pointer;
+    margin-right: 40px;
+    font-size: 36px;
+ }
+ 
+ 
+ /* Tilpasninger til mindre skærme */
+ @media screen and (max-width: 992px) {
+    .burger-icon {
+        display: block;
+    }
+ }
