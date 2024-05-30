@@ -4,6 +4,7 @@
     --sort: black;
     --hvid: white;
     --blå: #0066FF;
+    --mørkeblå: #004dc1;
     --pink: #E904A8; 
     --orange: #E96E15; 
     --grøn: #07AE22; 
@@ -208,6 +209,7 @@
  /*padding øverst*/
  main {
    padding-top: 17%;
+   padding-bottom: 100%;
  }
  
  /*Det øverste billede på siden style*/
@@ -260,4 +262,94 @@
    height: auto;
  }
  
+ }
+
+ 
+ /*Footer style*/
+
+ /*Tekstens placering*/
+ #footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+ }
+
+ /*sociale medier logo style*/
+ .somelogo {
+   width: 10%;
+   padding-left: 1.5%;
+   padding-right: 1.5%;
+ }
+
+ .somelogo:hover {
+   cursor: pointer;
+ }
+
+ #logosection {
+   padding-top: 3%;
+   padding-bottom: 5%;
+ }
+
+/*padding mellem sektionerne*/
+ .footersection {
+   padding-top: 3%;
+   padding-bottom: 3%;
+ }
+
+ /*skriftstørrelse på overskrifterne*/
+ h5 {
+   font-size: 1.5rem; 
+ }
+
+ #email {
+   border-style: solid;
+   border-width: 1px;
+   margin-top: 1rem;
+   padding-top: 2px;
+   padding-bottom: 2px;
+   padding-left: 4px;
+   padding-right: 4px;
+ }
+
+ #tilmeldknap {
+   background-color: var(--blå);
+   color: var(--hvid);
+   margin-top: 1rem;
+   padding-top: 0.2rem;
+   padding-bottom: 0.2rem;
+   padding-left: 1.3rem;
+   padding-right: 1.3rem;
+   box-shadow: 0 0 4px var(--sort); 
+ }
+
+ #tilmeldknap:hover {
+ cursor: pointer;
+ background-color: var(--mørkeblå);
+ }
+
+ @media screen and (min-width: 992px) {
+
+   /*Jusering ift. større skærme*/
+   #footer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      justify-content: center;
+      padding-left: 20%;
+    }
+  
+    .footersection {
+      text-align: start;
+      align-self: start; 
+    }
+  
+    /*logo størrelsen laves om*/
+    .somelogo {
+      width: 4%;
+    }
+  
+    
+  
  }
