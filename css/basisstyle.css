@@ -1,4 +1,6 @@
 
+/*Basis css 
+
 /*farver som variabler*/
 :root {
     --sort: black;
@@ -209,7 +211,7 @@
  /*padding øverst*/
  main {
    padding-top: 17%;
-   padding-bottom: 100%;
+   padding-bottom: 10%;
  }
  
  /*Det øverste billede på siden style*/
@@ -264,7 +266,6 @@
  
  }
 
- 
  /*Footer style*/
 
  /*Tekstens placering*/
@@ -274,6 +275,7 @@
    align-items: center;
    justify-content: center;
    text-align: center;
+   padding-bottom: 5%;
  }
 
  /*sociale medier logo style*/
@@ -303,6 +305,7 @@
    font-size: 1.5rem; 
  }
 
+ /*Email sektionen style*/
  #email {
    border-style: solid;
    border-width: 1px;
@@ -313,7 +316,8 @@
    padding-right: 4px;
  }
 
- #tilmeldknap {
+ /*Tilmeld + læs mere knapperne style*/
+ #tilmeldknap, .læsmereknap {
    background-color: var(--blå);
    color: var(--hvid);
    margin-top: 1rem;
@@ -324,32 +328,36 @@
    box-shadow: 0 0 4px var(--sort); 
  }
 
- #tilmeldknap:hover {
+ /*Style når man hover over tilmeld og læs mere knappen*/
+ #tilmeldknap:hover  {
  cursor: pointer;
  background-color: var(--mørkeblå);
  }
 
+ .læsmereknap:hover {
+  cursor: pointer;
+  background-color: var(--mørkeblå);
+ }
+
  @media screen and (min-width: 992px) {
 
-   /*Jusering ift. større skærme*/
-   #footer {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      justify-content: center;
-      padding-left: 20%;
-    }
+ /*Jusering af footer ift. større skærme*/
+ #footer {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2rem;
+   justify-content: center;
+   padding-left: 20%;
+ }
   
-    .footersection {
-      text-align: start;
-      align-self: start; 
-    }
+ .footersection {
+   text-align: start;
+   align-self: start; 
+ }
   
-    /*logo størrelsen laves om*/
-    .somelogo {
-      width: 4%;
-    }
-  
-    
+ /*logo størrelsen laves om*/
+ .somelogo {
+   width: 7%;
+ }
   
  }

@@ -1,0 +1,97 @@
+
+/*css for forsiden "index.html"*/
+
+/*Main style*/
+
+/*Style af sektionen "vores produkter*/
+#mainsektionet {
+    padding-top: 75%;
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-bottom: 20%;
+}
+
+/*Style af sektionen "ølsmagning*/
+#mainsektionto {
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20%;
+}
+
+/*Style af sektionen "vores formål*/
+#mainsektiontre {
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-bottom: 20%;
+}
+
+/*Padding mellem billede og teksterne*/
+.tekstsektion {
+    padding-top: 8%;
+}
+
+/*placering af billeder i midten*/
+.billedeplacering {
+    display: flex;
+    justify-content: center;
+}
+
+/*størrelse på billedet med dåserne*/
+#alledåserne {
+    width: 110%;
+    height: auto;
+}
+
+/*størrelse på det runde billede hvor de skåler*/
+#rundtbillede {
+    width: 80%;
+    height: auto;
+}
+
+/*font størrelse på overskrifterne*/
+h4, h6 {
+    font-size: 2rem;
+}
+
+#baggrundtilan {
+    background-image: url(/img/anmeldelserbaggrund.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+h6 {
+   text-align: center;
+    padding-bottom: 2%;
+}
+
+#anmeldelsersektion {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 7%;
+}
+
+.anmeldelse {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#stjerneikonsektion {
+    text-align: center;
+}
+
+.stjerneikon {
+    width: 7%;
+    height: auto;
+    padding-bottom: 1%;
+}
