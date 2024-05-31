@@ -3,18 +3,138 @@
 
 /*Main style*/
 
-#paddingtop {
-    padding-top: 75%;
-}
+ /*padding til top*/
+ #paddingtop {
+    padding-top: 70%;
+ }
 
-h1 {
-    font-size: 1.5rem;
-}
+ /*str. på h1 "Alkoholfri øl, eye-brow tekst*/
+ h1 {
+    font-size: 1.2rem;
+ }
 
-h2 {
-font-size: 2rem;
-}
+ /*str. på h2 "Vores produkter" + "Vores forhandlere"*/
+ h2 {
+ font-size: 2rem;
+ }
 
-h4 {
+ /*str. på h4 Alle øl varianterne*/
+ h4 {
     font-size: 2rem;
+ }
+
+ /*str. af billederne af dåserne*/
+ .dåsestr {
+    height: 300px;
+    width: auto;
+ }
+
+ /*placering af hver øl variants sektion*/
+ #sektionpilsner, #sektionclassic, #sektionipa, #sektionradler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+ }
+
+ /*baggrundsgradient til pilsner sektionen*/
+ #sektionpilsner {
+   background-image: linear-gradient(white, white, #F9E004, white, white);
+ }
+
+ /*baggrundsgradient til classic sektionen*/
+ #sektionclassic {
+    background-image: linear-gradient(white, white, #07AE22, white, white);
+ }
+
+ /*baggrundsgradient til ipa sektionen*/
+ #sektionipa {
+    background-image: linear-gradient(white, white, #E904A8, white, white)
+ }
+
+ /*baggrundsgradient til radler sektionen*/
+ #sektionradler {
+    background-image: linear-gradient(white, white, #E96E15, white, white)
+ }
+
+ /*placering af "Vores produkter" + "Vores forhandlere"*/
+ .vpvfafsnit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ /*space mellem de forskellige øl sektioner + de to afsnit*/
+ #sektionpilsner, #sektionclassic, #sektionipa, #sektionradler, .vpvfafsnit {
+    padding-top: 10%;
+    padding-bottom: 10%;
+ }
+
+@media screen and (min-width: 992px) {
+
+ /*padding til top*/
+ #paddingtop {
+    padding-top: 75%;
+ }
+
+  /*ny placering af de to øl varianters sektion*/
+  #sektionpilsner, #sektionradler {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+     
+ }
+
+ /*ny placering af de to øl varianters sektion*/
+ #sektionclassic, #sektionipa {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+ }
+
+ /*ny str. af billederne af dåserne*/
+ .dåsestr {
+    height: 425px;
+    width: auto;
+ }
+
+  /*ny baggrundsgradient til pilsner sektionen*/
+  #sektionpilsner {
+    background-image: linear-gradient(white, #F9E004, white, white);
+  }
+ 
+  /* ny baggrundsgradient til classic sektionen*/
+  #sektionclassic {
+     background-image: linear-gradient(white, #07AE22, white, white);
+  }
+ 
+  /*ny baggrundsgradient til ipa sektionen*/
+  #sektionipa {
+     background-image: linear-gradient(white, #E904A8, white, white)
+  }
+ 
+  /*ny baggrundsgradient til radler sektionen*/
+  #sektionradler {
+     background-image: linear-gradient(white, #E96E15, white, white)
+  }
+
+  /*ingen <br> i de to afsnit*/
+  .vpvfafsnit br {
+    display: none;
+ }
+
+ /*Så afsnittene kommer mere ind på midten*/
+ .vpvfafsnit {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+ }
+
+  /*ny space mellem de forskellige øl sektioner + de to afsnit*/
+  #sektionpilsner, #sektionclassic, #sektionipa, #sektionradler, .vpvfafsnit {
+    padding-top: 5%;
+    padding-bottom: 5%;
+ }
+
 }
