@@ -44,13 +44,13 @@
 
 /*størrelse på billedet med dåserne*/
 #alledåserne {
-    width: 110%;
-    height: auto;
+    width: auto;
+    height: 225px;
 }
 
 /*størrelse på det runde billede hvor de skåler*/
 #rundtbillede {
-    width: 80%;
+    width: 300px;
     height: auto;
 }
 
@@ -59,6 +59,7 @@ h4, h6 {
     font-size: 2rem;
 }
 
+/*Baggrundsbillede til anmeldelser sektionen. Style af dette og style af selve sektionen*/
 #baggrundtilan {
     background-image: url(/img/anmeldelserbaggrund.webp);
     background-repeat: no-repeat;
@@ -70,28 +71,111 @@ h4, h6 {
     padding-bottom: 7%;
 }
 
+/*placering + padding til overskrift "Det siger vores kunder*/
 h6 {
    text-align: center;
     padding-bottom: 2%;
 }
 
+/*Style og placering af anmeldelserne*/
 #anmeldelsersektion {
     text-align: center;
     padding-top: 2%;
     padding-bottom: 7%;
 }
 
+/*padding til hver af anmeldelserne så der kommer space mellem*/
 .anmeldelse {
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
+/*placering af sektionen med stjerneikonerne*/
 #stjerneikonsektion {
     text-align: center;
 }
 
+/*stjerneikon størrelse + padding*/
 .stjerneikon {
     width: 7%;
     height: auto;
     padding-bottom: 1%;
+}
+
+@media screen and (min-width: 992px) {
+
+ /*Ny størrelse på det runde billede*/
+ #rundtbillede {
+    width: 400px;
+    height: auto;    
+ }
+    
+ /*Ny størrelse på alle dåserne*/
+ #alledåserne {
+ width: auto;
+ height: 300px;
+ padding-left: 20%;
+ }
+
+ /*ingen padding øverst på tekstsektionerne*/
+ .tekstsektion {
+    padding-top: 0%;
+ }
+
+ /*Ny style af sektionen "vores produkter*/
+ #mainsektionet {
+    padding-top: 50%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 10%;
+    align-items: center;
+ }
+
+ /*Ny style af sektionen "ølsmagning*/
+ #mainsektionto {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10%;
+    align-items: center;
+    
+}
+
+/*Ny style af sektionen "vores formål*/
+#mainsektiontre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Style og placering af anmeldelserne*/
+#anmeldelsersektion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+/*stjerneikon størrelse + padding*/
+.stjerneikon {
+    width: 3%;
+    height: auto;
+}
+
+/*padding til hver af anmeldelserne*/
+.anmeldelse {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/*Padding til baggrundsbilledet*/
+#baggrundtilan {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 }
