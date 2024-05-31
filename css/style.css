@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
     padding-bottom: 20%;
 }
 
@@ -21,6 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-bottom: 20%;
 }
 
@@ -29,6 +31,7 @@
     margin-left: 7%;
     margin-right: 7%;
     padding-bottom: 20%;
+    align-items: center;
 }
 
 /*Padding mellem billede og teksterne*/

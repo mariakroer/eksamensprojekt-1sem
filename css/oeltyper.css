@@ -3,3 +3,18 @@
 
 /*Main style*/
 
+#paddingtop {
+    padding-top: 75%;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+font-size: 2rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
