@@ -72,6 +72,17 @@
     font-size: 1.2rem;
  }
 
+ /*Style af links til de andre sider*/
+ .links {
+   text-decoration: none;
+   color: black;
+   font-style: italic;
+}
+
+.links:hover {
+   text-decoration: underline;
+}
+
  @media screen and (min-width: 992px) {
 
  /*hele tekststykket - padding øverst*/

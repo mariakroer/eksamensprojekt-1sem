@@ -2,4 +2,177 @@
 
 /*Main style*/
   
+ /*Alle sektionerne i løbet af siden - Nogle skjult + padding mellem*/
+ #sektionet {
+    order: 1;
+    padding-bottom: 6%;
+ }
+
+ #sektionto {
+    order: 3;
+    padding-bottom: 6%;
+ }
+
+ #sektiontre {
+    order: 5;
+    padding-bottom: 6%;
+ }
+
+ #sektionfire {
+    display: none;
+ }
+
+ #sektionfem {
+    order: 2;
+    padding-bottom: 6%;
+ }
+
+ #sektionseks {
+    order: 4;
+    padding-bottom: 6%;
+ }
+
+ #sektionsyv {
+    display: none;
+ }
+
+ #sektionotte {
+    order: 6;
+    padding-bottom: 6%;
+ }
+
+ #sektionni {
+    order: 7;
+    padding-bottom: 6%;
+ }
+
+ #sektionti {
+    display: none;
+ }
+
+ #sektionelleve {
+    display: none;
+ }
+
+ /*Str. af "Accepter alkoholfri øl - eyebrow tekst*/
+ h1 {
+    font-size: 1.2rem;
+ }
+
+ /*Str. af overskrift "Vores formål*/
+ h2 {
+    font-size: 2rem;
+ }
  
+ /*Style af sektionerne*/
+ #tekstsektionformål {
+    padding-top: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ /*Str af billedet af dåserne*/
+ #dåserbilledet {
+    width: 100%;
+    height: auto;
+ }
+
+ /*Str. af de runde billeder*/
+ .derundebilleder {
+    width: 90%;
+    height: auto;
+ }
+
+ /*Style af links til de andre sider*/
+ .links {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+ }
+
+ .links:hover {
+    text-decoration: underline;
+ }
+
+ @media screen and (min-width: 992px) {
+
+    /*Ny rækkefølge til desktop version - nogle ny skjult + style af nogle*/
+    #sektionet {
+        display: none;
+     }
+    
+     #sektionto {
+        display: none;
+     }
+    
+     #sektiontre {
+        display: none;
+     }
+    
+     #sektionfire {
+        display: block;
+        padding-bottom: 6%;
+     }
+    
+     #sektionfem {
+        display: none;
+     }
+    
+     #sektionseks {
+       display: none;
+     }
+    
+     #sektionsyv {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 6%;
+
+     }
+
+     #sektionotte {
+        display: none;
+     }
+    
+     #sektionni {
+        display: none;
+     }
+
+     #sektionti {
+        display: block;
+     }
+
+     #sektionelleve {
+        display: block;
+        margin-left: 15%;
+        margin-right: 15%;
+     }
+
+     /*Ny style af alle sektionerne*/
+     #tekstsektionformål {
+        padding-top: 45%;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+     }
+
+     /*Ny str. af billedet af dåserne*/
+     #dåserbilledet {
+        width: 900px;
+        height: auto;
+     }
+
+     .rundebillederdesk {
+        width: 250px;
+        height: auto;
+        padding-bottom: 3%;
+        padding-top: 3%;
+     }
+
+ }

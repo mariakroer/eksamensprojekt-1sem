@@ -68,6 +68,7 @@ h4, h6 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: scroll; /*scroll effekt - fjernet på mobilversion*/ 
     margin-left: 7%;
     margin-right: 7%;
     padding-top: 7%;
@@ -96,13 +97,17 @@ h6 {
 /*placering af sektionen med stjerneikonerne*/
 #stjerneikonsektion {
     text-align: center;
-}
+} 
 
 /*stjerneikon størrelse + padding*/
 .stjerneikon {
     width: 7%;
     height: auto;
     padding-bottom: 1%;
+}
+
+.italic {
+    font-style: italic;
 }
 
 @media screen and (min-width: 992px) {
@@ -154,6 +159,7 @@ h6 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 10%;
 }
 
 /*Style og placering af anmeldelserne*/
@@ -181,4 +187,10 @@ h6 {
     padding-top: 5%;
     padding-bottom: 5%;
 }
+
+/*Scroll effekten på anmeldelser afsnittet*/
+#baggrundtilan {
+    background-attachment: fixed; /*scroll effekt*/
+}
+  
 }
