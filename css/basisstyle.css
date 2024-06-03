@@ -1,5 +1,5 @@
 
-/*Basis css til alle html
+/*Basis css til alle html filerne*/
 
 /*farver som variabler*/
 :root {
@@ -270,7 +270,7 @@
  /*Footer style*/
 
  /*Tekstens placering*/
- #footer {
+ footer {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -318,7 +318,7 @@
  }
 
  /*Tilmeld + læs mere knapperne style*/
- #tilmeldknap, .læsmereknap {
+ #tilmeldknap, .læsmereknap, #tilmelddigherknap {
    background-color: var(--blå);
    color: var(--hvid);
    margin-top: 1rem;
@@ -340,15 +340,21 @@
   background-color: var(--mørkeblå);
  }
 
+ #tilmelddigherknap:hover {
+  cursor: pointer;
+  background-color: var(--mørkeblå);
+ }
+
  @media screen and (min-width: 992px) {
 
  /*Jusering af footer ift. større skærme*/
- #footer {
+ footer {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 2rem;
    justify-content: center;
    padding-left: 20%;
+   padding-bottom: 5%;
  }
   
  .footersection {

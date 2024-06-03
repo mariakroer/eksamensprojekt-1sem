@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <!--meta - for bedre SEO-->
     <meta charset="UTF-8">
@@ -212,12 +212,11 @@
  <!--Main HTML-->
     <main>
 
-        <!--Billederne + teksten øverst på siderne-->
-        <img src="img/oelboblerlille.gif" id="øverstebilledelille" alt="Øl med bobler af brus i lille">
-        <img src="img/oelbobler.gif" id="øverstebilledestor" alt="Øl med bobler af brus i stor">
+        <!--Den øverste video + teksten øverst på siderne-->
+        <video autoplay muted loop src="video/oelboblerlille.webm" id="øverstebilledelille"></video>
+        <video autoplay muted loop src="video/oelbobler.webm" id="øverstebilledestor"></video>
         <img src="img/zerobuzzbrewtekst.webp" id="øverstetekst" alt="ZeroBuzz Brew tekst"> <!--Sat ind som billede, da denne skrifttype ikke er gratis, så derfor lavet i photoshop-->
 
-        
         <section id="tekstsektionølsmagning">
 
             <!--Sektion 1 - tekst-->
@@ -303,7 +302,7 @@
                 informationer om eventet og mulighed for at 
                 tilmelde dig ølsmagningen lige når det passer dig.
             </p>
-            <button id="tilmeldknap">Tilmeld dig her</button>
+            <button id="tilmelddigherknap">Tilmeld dig her</button>
             </section>
         
         </section>
@@ -313,8 +312,6 @@
  <!--Footer HTML-->
     <footer>
         
-        <section id="footer">
-
          <!--Footer sektion "Kontakt"-->
          <section class="footersection" >
              <h5>Kontakt</h5> 
@@ -341,7 +338,7 @@
             <p>Tilmeld dig vores nyhedsbrev og bliv opdateret <br>
                 på nye produkter og events hos ZeroBuzz Brew
             </p>
-            <input type="email" id="email" name="email" value="Skriv din e-mail her.."> <br>
+            <input type="email" id="email" name="email" placeholder="Skriv din e-mail her.."> <br>
             <button id="tilmeldknap">Tilmeld</button>
          </section>
        
@@ -352,8 +349,7 @@
             <img src="img/so-melogo/tiktoklogo.webp" class="somelogo" alt="TikTok logo">
             <img src="img/so-melogo/instagramlogo.webp" class="somelogo" alt="Instagram logo">
             <img src="img/so-melogo/facebooklogo.webp" class="somelogo" alt="Facebook logo">
-         </section>
-         
+            </section>
         </section>
 
     </footer>

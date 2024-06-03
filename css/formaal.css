@@ -76,7 +76,7 @@
  }
 
  /*Str af billedet af dåserne*/
- #dåserbilledet {
+ .dåserbilledet {
     width: 100%;
     height: auto;
  }
@@ -163,7 +163,7 @@
      }
 
      /*Ny str. af billedet af dåserne*/
-     #dåserbilledet {
+     .dåserbilledet {
         width: 900px;
         height: auto;
      }

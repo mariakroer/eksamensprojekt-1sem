@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <!--meta - for bedre SEO-->
     <meta charset="UTF-8">
@@ -212,9 +212,9 @@
  <!--Main HTML-->
     <main>
 
-        <!--Billederne + teksten øverst på siderne-->
-        <img src="img/oelboblerlille.gif" id="øverstebilledelille" alt="Øl med bobler af brus i lille">
-        <img src="img/oelbobler.gif" id="øverstebilledestor" alt="Øl med bobler af brus i stor">
+        <!--Den øverste video + teksten øverst på siderne-->
+        <video autoplay muted loop src="video/oelboblerlille.webm" id="øverstebilledelille"></video>
+        <video autoplay muted loop src="video/oelbobler.webm" id="øverstebilledestor"></video>
         <img src="img/zerobuzzbrewtekst.webp" id="øverstetekst" alt="ZeroBuzz Brew tekst"> <!--Sat ind som billede, da denne skrifttype ikke er gratis, så derfor lavet i photoshop-->
 
      <!--Sektionen med "vores produkter"-->
@@ -227,9 +227,10 @@
          Med disse forskellige varianter er alkoholfri <br>
           øl et attraktivt valg for enhver smag og anledning. <br>
          </p>
-         <a href="oeltyper.html">
-             <button class="læsmereknap">Læs mere</button>
-         </a>
+         <form action="oeltyper.html">
+         <input class="læsmereknap" type="submit" value="Læs mere">
+        </form>
+         
      </article>
      <picture class="billedeplacering" >
           <img src="img/alledåsersammen.webp" id="alledåserne" alt="Alle ZeroBuzz Brew's alkoholfrie øl sammen på et billede">
@@ -249,9 +250,9 @@
          Uanset om du er ølentusiast eller nybegynder, <br>
          er der noget for enhver smag.
          </p>
-         <a href="oelsmagning.html">
-             <button class="læsmereknap">Læs mere</button>
-         </a>
+         <form action="oelsmagning.html">
+            <input class="læsmereknap" type="submit" value="Læs mere">
+           </form>
      </article>
      </section>
 
@@ -262,9 +263,9 @@
          Det kan hjælpe til at gøre det mere acceptabelt og <br>
          lettere at vælge alkoholfri øl uden en risiko for at blive ekskluderet fra fællesskabet.
          </p>
-         <a href="formaal.html">
-             <button class="læsmereknap">Læs mere</button>
-         </a>
+         <form action="formaal.html">
+            <input class="læsmereknap" type="submit" value="Læs mere">
+           </form>
      </section>
 
      <!--Anmeldelser sektionen-->
@@ -324,10 +325,8 @@
  <!--Footer HTML-->
     <footer>
         
-        <section id="footer">
-
          <!--Footer sektion "Kontakt"-->
-         <section class="footersection" >
+         <section class="footersection">
              <h5>Kontakt</h5> 
              <p>Århusvej 123 <br>
              8200 Århus N <br> <br>
@@ -337,7 +336,7 @@
          </section>
 
          <!--Footer sektion "Vores forhandlere"-->
-         <section class="footersection" >
+         <section class="footersection">
             <h5>Vores forhandlere</h5>
             <p>Find vores produkter her: <br>
                 Kjær og sommerfeldt <br>
@@ -347,12 +346,12 @@
          </section>
          
          <!--Footer sektion "Tilmeld dig vores nyhedsbrev!"-->
-         <section class="footersection" >
+         <section class="footersection">
             <h5>Tilmeld dig vores nyhedsbrev!</h5>
             <p>Tilmeld dig vores nyhedsbrev og bliv opdateret <br>
                 på nye produkter og events hos ZeroBuzz Brew
             </p>
-            <input type="email" id="email" name="email" value="Skriv din e-mail her.."> <br>
+            <input type="email" id="email" name="email" placeholder="Skriv din e-mail her.."> <br>
             <button id="tilmeldknap">Tilmeld</button>
          </section>
        
@@ -363,10 +362,9 @@
             <img src="img/so-melogo/tiktoklogo.webp" class="somelogo" alt="TikTok logo">
             <img src="img/so-melogo/instagramlogo.webp" class="somelogo" alt="Instagram logo">
             <img src="img/so-melogo/facebooklogo.webp" class="somelogo" alt="Facebook logo">
+            </section>
          </section>
          
-        </section>
-
     </footer>
  </body>
 </html> 
