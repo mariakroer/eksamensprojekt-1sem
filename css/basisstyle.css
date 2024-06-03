@@ -76,7 +76,7 @@
     background-color: var(--hvid);
     color: var(--sort);
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1rem;
  }
 
  .burger-icon {
@@ -124,7 +124,6 @@
  #sub-dropdown-content2{
     top:6rem;
     position: fixed;
- 
  }
  
  /* Skjuler checkbox */
