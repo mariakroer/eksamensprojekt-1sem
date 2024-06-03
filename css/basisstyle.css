@@ -61,7 +61,7 @@
  /*styling af burgermenu*/
  .dropdown-burgermenu {
     display: none; /* Skjuler dropdown-indholdet som standard */
-    position:fixed;
+    position: fixed;
     background-color: var(--hvid);
     font-weight: 100;
     box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
@@ -76,7 +76,7 @@
     background-color: var(--hvid);
     color: var(--sort);
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
  }
 
  .burger-icon {
@@ -196,12 +196,12 @@
 
  .dropdown-content a{
    font-weight: 100;
-   font-style:normal;
+   font-style: normal;
    font-size: 1rem;
  }
 
  #dropdown-left{
-   right: 0.7rem; /*Justerer positionen til højre*/
+   right: 0.7rem; /*Justerer position til højre*/
  }
 
  }
