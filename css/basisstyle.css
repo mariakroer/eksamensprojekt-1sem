@@ -137,16 +137,6 @@
  }
  
  @media screen and (min-width: 992px) {
-
- /*det store logo vises*/
- #logostor {
-   display: block;
- }
-
- /*Det lille logo skjules*/
- #logolille {
-   display: none;
- }
  
  /*skjuler burgerikonet fra desktop*/
  .burger-icon {
@@ -159,6 +149,16 @@
    display: flex; /*Navigationsbaren vises*/
    background-color: var(--hvid);
  }
+
+  /*det store logo vises*/
+  #logostor {
+    display: block;
+  }
+ 
+  /*Det lille logo skjules*/
+  #logolille {
+    display: none;
+  }
 
  .navbar li:hover .dropdown-content { 
    display: block; /*Viser dropdown-indholdet, når musen hover over menupunkterne*/
