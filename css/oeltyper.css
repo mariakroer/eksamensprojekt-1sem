@@ -28,7 +28,7 @@
     height: 300px;
     width: auto;
  }
-
+ 
  /*placering af hver øl variants sektion*/
  #sektionpilsner, #sektionclassic, #sektionipa, #sektionradler {
     display: flex;
